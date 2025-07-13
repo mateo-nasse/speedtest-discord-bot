@@ -1,0 +1,5 @@
+# .gitignore
+.env
+discord.log
+__pychache__/
+*.pyc
