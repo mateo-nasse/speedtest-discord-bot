@@ -58,8 +58,10 @@ async def speedtest(ctx):
     # Make a thread to not block bot from reading events
     results = await asyncio.to_thread(_speed_test_sync)
 
+    user = "Mateo"
+
     msg = (
-        f"**Mateo’s speed**\n"
+        f"**{user}’s speed**\n"
         "```"
         f"Download : {results['download']:.2f} Mbps\n"
         f"Upload   : {results['upload']:.2f} Mbps\n"
